@@ -1,7 +1,12 @@
 import { GoogleGenAI } from "@google/genai";
 
 export default async function handler(req, res) {
-  const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+  const GEMINI_API_KEY = "AIzaSyDm1IhyroXxADsQfilTsLVfUWsLalD1GWI";
+  if (!GEMINI_API_KEY) {
+    res.status(500).json({ error: "Server misconfiguration: missing API key" });
+    return;
+  }
+  const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
 
   if (req.method !== "POST") {
     res.setHeader("Allow", "POST");
@@ -17,11 +22,6 @@ export default async function handler(req, res) {
   }
 
   // Replace with your actual Gemini API endpoint and key name
-  const GEMINI_API_KEY = "AIzaSyDm1IhyroXxADsQfilTsLVfUWsLalD1GWI";
-  if (!GEMINI_API_KEY) {
-    res.status(500).json({ error: "Server misconfiguration: missing API key" });
-    return;
-  }
 
   try {
     const response = await ai.models.generateContent({
