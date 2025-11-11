@@ -57,7 +57,7 @@ Now answer the following student question as Bidushekhar.
     });
 
     const answer = response.text || "No answer received";
-    console.log('Raw Gemini API response:', text);
+    console.log('Raw Gemini API response:', response.text);
 
     res.status(200).json({ answer });
   } catch (error) {
