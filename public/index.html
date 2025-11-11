@@ -134,7 +134,6 @@
           const prompt = inputText.value.trim();
           if (!prompt) return alert("Please enter or speak a question first.");
           micButton.disabled = true;
-          sendButton.disabled = true;
           inputText.disabled = true;
 
           const answer = await sendToGemini(prompt);
@@ -143,7 +142,6 @@
           speakText(answer);
 
           micButton.disabled = false;
-          sendButton.disabled = false;
           inputText.disabled = false;
         };
 
