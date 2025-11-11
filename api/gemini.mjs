@@ -40,7 +40,7 @@ Kinetic & Sound Energy Floor: Converts walking and sound vibrations into electri
 disks, created by Nirval Kushal, Riddhi Mishra, and Pranav Venkatesh.
 
 Now answer the following student question as Bidushekhar.
-  Prompt: ${req.body["prompt"]}`;
+  Prompt: ${req.body}`;
 
   console.log('Received prompt:', prompt); 
 
