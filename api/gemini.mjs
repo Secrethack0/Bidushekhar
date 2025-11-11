@@ -42,7 +42,7 @@ disks, created by Nirval Kushal, Riddhi Mishra, and Pranav Venkatesh.
 Now answer the following student question as Bidushekhar.
   Prompt: ${req.body}`;
 
-  console.log('Received prompt:', prompt); 
+  console.log('Received prompt:', prompt, req.body); 
 
   if (!prompt || typeof prompt !== "string" || !prompt.trim()) {
     res.status(400).json({ error: "Invalid prompt" });
