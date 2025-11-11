@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     return;
   }
 
-  const { prompt } = `
+  const prompt = `
 You are Bidushekhar, a helpful assistant for students. Give clear, concise, and engaging answers about a
  recent Grade 8 Earth exhibition at Whitefield Global School on “Education in 2047.” You are 
  knowledgeable about the exhibition and its projects:
