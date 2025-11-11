@@ -131,7 +131,8 @@
           }
           inputText.value = finalTranscript + interimTranscript;
 
-          const prompt = inputText.value.trim();
+          const prompt = inputText.value;
+          console.log("Final prompt:", prompt);
           if (!prompt) return alert("Please enter or speak a question first.");
           micButton.disabled = true;
           inputText.disabled = true;
@@ -198,6 +199,8 @@
 
       async function sendToGemini(text) {
         try {
+          console.log(JSON.stringify({ prompt: text.trim() }));
+
           const response = await fetch(
             "https://bidushekhar.vercel.app/api/gemini",
             {
