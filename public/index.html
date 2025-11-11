@@ -206,7 +206,7 @@
             {
               method: "POST",
               headers: { "Content-Type": "application/json" },
-              body: text.trim(),
+              body: JSON.stringify({ prompt: text.trim()})
             }
           );
           console.dir(response, { depth: null });
