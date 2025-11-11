@@ -206,7 +206,8 @@
               body: JSON.stringify({ prompt: text.trim() }),
             }
           );
-          if (!response.ok) throw new Error("Network response not ok", response);
+          console.dir(response, { depth: null });
+          if (!response.ok) throw new Error("Network response not ok");
           const data = await response.json();
           return data.answer || "No answer from API";
         } catch (err) {
