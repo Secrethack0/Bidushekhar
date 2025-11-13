@@ -139,8 +139,8 @@
 
           const answer = await sendToGemini(prompt);
           inputText.value = "";
-          await typeWriter(answer);
           speakText(answer);
+          await typeWriter(answer);
 
           micButton.disabled = false;
           inputText.disabled = false;
