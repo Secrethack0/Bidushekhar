@@ -51,7 +51,7 @@ disks, created by Nirval Kushal, Riddhi Mishra, and Pranav Venkatesh.
 
 Robot: A robot with an LCD screen display which displays text whenever it is typed from the computer for
 assisting the teacher in the classroom by displaying text to the whole class for their understanding,
-built by Aaron Singh Negi, Gunnit M., and Aswin K.V.  
+built by Aaron Singh Negi, Joe Joseph Thomas, and Aswin K.V.  
 
 Anisha and Sahana organized the engagement activity and also helped setting up decorations and chart work.
 
