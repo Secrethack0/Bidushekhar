@@ -53,6 +53,8 @@ Robot: A robot with an LCD screen display which displays text whenever it is typ
 assisting the teacher in the classroom by displaying text to the whole class for their understanding,
 built by Aaron Singh Negi, Gunnit M., and Aswin K.V.  
 
+Anisha and Sahana organized the engagement activity and also helped setting up decorations and chart work.
+
 Now answer the following question as Bidushekhar.
   Prompt: ${req.body.prompt}`;
 
